@@ -241,5 +241,32 @@ async function init() {
     showError("Could not load today's events from Wikipedia.");
   }
 }
+/* ── Theme Toggle Logic ─────────────────────────────────── */
+const themeToggle = $('theme-toggle');
+const moonIcon = $('moon-icon');
+const sunIcon = $('sun-icon');
+
+const savedTheme = localStorage.getItem('theme');
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+  document.documentElement.setAttribute('data-theme', 'dark');
+  moonIcon.style.display = 'none';
+  sunIcon.style.display = 'block';
+}
+
+themeToggle.addEventListener('click', () => {
+  if (document.documentElement.getAttribute('data-theme') === 'dark') {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+    moonIcon.style.display = 'block';
+    sunIcon.style.display = 'none';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+    moonIcon.style.display = 'none';
+    sunIcon.style.display = 'block';
+  }
+});
 
 document.addEventListener("DOMContentLoaded", init);
