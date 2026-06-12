@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnThisDay — History Unfolding</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="site-logo">OnThisDay</span>
+      <span class="header-tagline">history, one day at a time</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow" id="hero-dayname">—</p>
+        <h1 class="hero-date" id="hero-date">
+          <span class="hero-month" id="hero-month">—</span>
+          <span class="hero-day" id="hero-day">—</span>
+        </h1>
+        <p class="hero-meta" id="hero-meta">Loading events&hellip;</p>
+      </div>
+      <div class="hero-rule"></div>
+    </section>
+
+    <section class="content">
+      <div class="content-inner">
+
+        <div class="featured-row" id="featured-row">
+          <!-- featured cards injected here -->
+        </div>
+
+        <div class="section-divider">
+          <span class="section-label">Also on this day</span>
+        </div>
+
+        <div class="events-grid" id="events-grid">
+          <!-- regular event cards injected here -->
+        </div>
+
+        <div class="section-divider">
+          <span class="section-label">Quick facts</span>
+        </div>
+
+        <div class="pills-wrap" id="pills-wrap">
+          <!-- pill items injected here -->
+        </div>
+
+        <div class="births-section">
+          <div class="section-divider">
+            <span class="section-label">Born on this day</span>
+          </div>
+          <div class="births-grid" id="births-grid">
+            <!-- births injected here -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Data via <a href="https://www.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a> · Open source on <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> · Refreshes daily</p>
+  </footer>
+
+  <div class="skeleton-overlay" id="skeleton-overlay">
+    <div class="sk-hero">
+      <div class="sk-block sk-eyebrow"></div>
+      <div class="sk-block sk-title"></div>
+      <div class="sk-block sk-subtitle"></div>
+    </div>
+    <div class="sk-cards">
+      <div class="sk-block sk-card-lg"></div>
+      <div class="sk-block sk-card-lg"></div>
+    </div>
+    <div class="sk-cards sk-cards-sm">
+      <div class="sk-block sk-card-sm"></div>
+      <div class="sk-block sk-card-sm"></div>
+      <div class="sk-block sk-card-sm"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
