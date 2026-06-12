@@ -1,8 +1,10 @@
-# OnThisDay - Historical Event Tracker
+# OnThisDay 📜
+**A minimal, daily tracker for historical events, notable births, and world milestones.**
 
-A minimal, elegant web application that fetches historical events, notable births, and significant milestones from the free Wikipedia API based on the current date. Built using semantic HTML, custom CSS variables with a modern parchment texture, and lightweight vanilla JavaScript.
+*Honestly, this is a very simple idea, and the code was built entirely with AI. But having a clean, fast way to see exactly what happened on this day in history is just really cool.*
+
+Built with pure HTML, CSS, and Vanilla JavaScript, this lightweight app pulls live, daily data directly from the free Wikipedia API. No frameworks, no API keys—just a seamless way to explore history. 
 
 ## Credits
-* **Idea:** Me
-* **Prompt:** Me
-* **Execution:** Claude and Gemini
+* **Idea & Prompting:** Me
+* **Code Execution:** Claude & Gemini
