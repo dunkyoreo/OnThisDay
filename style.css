@@ -441,3 +441,44 @@ main, header, footer { position: relative; z-index: 1; }
   .fade-in { animation: none; }
   .event-card { transition: none; }
 }
+
+/* ── Theme Toggle & Dark Mode ─────────────────────────────── */
+.theme-toggle {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--ink-ghost);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+.theme-toggle:hover { color: var(--ink); }
+.theme-toggle svg { width: 18px; height: 18px; }
+
+[data-theme="dark"] {
+  --cream:        #1C1917;
+  --cream-dark:   #272421;
+  --ink:          #F5F0E8;
+  --ink-soft:     #D6CEC4;
+  --ink-muted:    #A69990;
+  --ink-ghost:    #6B5F58;
+  --rust:         #E3734D;
+  --rust-light:   #4A2B20;
+  --sage:         #76936C;
+  --sage-light:   #2E3D29;
+  --slate:        #6B87A6;
+  --slate-light:  #243342;
+  --amber:        #C4964D;
+  --amber-light:  #42321A;
+  --mauve:        #9E7B9E;
+  --mauve-light:  #3D2A3D;
+  --border:       rgba(245, 240, 232, 0.12);
+  --border-soft:  rgba(245, 240, 232, 0.05);
+}
+
+[data-theme="dark"] .grain { opacity: 0.02; filter: invert(1); }
+[data-theme="dark"] .fact-pill, 
+[data-theme="dark"] .birth-card { background: var(--cream-dark); }
